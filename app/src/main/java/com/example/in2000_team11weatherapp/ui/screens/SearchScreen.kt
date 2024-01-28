@@ -44,7 +44,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 
-// AIzaSyAA1JfXgvYgKfmUyl8Fe3JZJdIk867rPbw API KEY
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SearchScreen(navController: NavHostController, onSearch: (Pair<String, LatLng>) -> Unit, locationViewModel: LocationViewModel,textToSpeechViewModel: TextToSpeechViewModel) {
@@ -68,7 +68,7 @@ fun SearchScreen(navController: NavHostController, onSearch: (Pair<String, LatLn
     val buttonHeight = screenHeight / 100 * 15
 
 
-    //https://maps.googleapis.com/maps/api/place/autocomplete/json?input=os&key=AIzaSyAA1JfXgvYgKfmUyl8Fe3JZJdIk867rPbw"
+
     /**
      * This Launched Effect gets suggestions when the user start typing
      */
@@ -362,7 +362,7 @@ fun SavedLocations(
  */
 @Composable
 fun LocationSuggestion(location: Prediction, onSuggestionClick: (String, LatLng) -> Unit) {
-    val apiKey = "AIzaSyAA1JfXgvYgKfmUyl8Fe3JZJdIk867rPbw"
+
     Text(
         text = location.description,
         color = Color.Black,
