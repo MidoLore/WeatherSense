@@ -75,7 +75,6 @@ fun SearchScreen(navController: NavHostController, onSearch: (Pair<String, LatLn
     LaunchedEffect(query.text) {
         favoriteLocations.value = locationViewModel.getFavoriteLocations()
         delay(100)
-        val apiKey = "AIzaSyAA1JfXgvYgKfmUyl8Fe3JZJdIk867rPbw"
         val input = query.text
         val url = "https://maps.googleapis.com/maps/api/place/autocomplete/json?input=$input&key=$apiKey"
         val client = HttpClient(Android) {
