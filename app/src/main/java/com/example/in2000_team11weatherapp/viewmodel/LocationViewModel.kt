@@ -39,7 +39,6 @@ class LocationViewModel(application: Application) : AndroidViewModel(application
      */
     suspend fun getLocationName(latitude: Double,longitude: Double): String? {
         /*
-        val apiKey = "AIzaSyAA1JfXgvYgKfmUyl8Fe3JZJdIk867rPbw"
         val url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=$latitude,$longitude&result_type=locality&key=$apiKey"
         val client = HttpClient(Android) {
             install(ContentNegotiation) {
